@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chính sách bảo mật của Egg Island (Đảo Trứng).">
+  <title>Egg Island — Chính sách bảo mật</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">Egg Island <span>Đảo Trứng</span></a>
+    <div class="header-actions">
+      <nav aria-label="Main navigation">
+        <a aria-current="page" href="/" data-en="Privacy" data-vi="Bảo mật">Privacy</a>
+        <a href="/delete-data.html" data-en="Delete data" data-vi="Xoá dữ liệu">Delete data</a>
+        <a href="/terms.html" data-en="Terms" data-vi="Điều khoản">Terms</a>
+      </nav>
+      <div class="language-picker" role="group" aria-label="Language">
+        <button type="button" data-language-button="en" aria-pressed="true">English</button>
+        <button type="button" data-language-button="vi" aria-pressed="false">Tiếng Việt</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="card lang-panel" data-language="vi" hidden>
+      <p class="eyebrow">Tuan Hoang · Cập nhật ngày 10/08/2026</p>
+      <h1>Chính sách bảo mật</h1>
+      <p class="lead">Chính sách này áp dụng cho trò chơi Egg Island (Đảo Trứng) trên Android và iOS.</p>
+
+      <h2>1. Tổng quan</h2>
+      <p>Egg Island không yêu cầu bạn đăng ký bằng email hoặc số điện thoại. Phần lớn tiến trình trò chơi, bao gồm tiền tệ, thú cưng, nhiệm vụ và cài đặt, được lưu cục bộ trên thiết bị. Một số tính năng trực tuyến và dịch vụ quảng cáo cần xử lý dữ liệu như mô tả bên dưới.</p>
+
+      <h2>2. Dữ liệu được xử lý</h2>
+      <h3>Dữ liệu lưu trên thiết bị</h3>
+      <p>Tiến trình chơi, cài đặt, lựa chọn đồng ý và năm sinh được lưu trên thiết bị. Năm sinh dùng để kiểm tra độ tuổi và không được gửi tới máy chủ bảng xếp hạng.</p>
+
+      <h3>Bảng xếp hạng</h3>
+      <p>Khi bạn bật bảng xếp hạng, trò chơi gửi mã người chơi ngẫu nhiên, tên hiển thị, điểm số và các chỉ số kỹ thuật của ván chơi tới Supabase. Dữ liệu này dùng để hiển thị thứ hạng, xác minh điểm và hạn chế gian lận. Tên hiển thị và điểm có thể được người chơi khác nhìn thấy.</p>
+
+      <h3>Quảng cáo</h3>
+      <p>Trò chơi sử dụng Google AdMob để cung cấp quảng cáo xen kẽ và quảng cáo có tặng thưởng. Tuỳ theo thiết bị, khu vực và lựa chọn đồng ý của bạn, Google và các đối tác quảng cáo có thể xử lý địa chỉ IP, thông tin thiết bị, mã nhận dạng quảng cáo, dữ liệu tương tác với quảng cáo và dữ liệu chẩn đoán để phân phối, đo lường, chống gian lận và tuân thủ pháp luật.</p>
+      <p>Ở những khu vực áp dụng, trò chơi sử dụng Google User Messaging Platform (UMP) để xin và lưu lựa chọn về quảng cáo. Bạn có thể mở lại lựa chọn này trong <strong>Cài đặt → Quyền riêng tư → Tuỳ chọn quảng cáo</strong> khi pháp luật yêu cầu.</p>
+
+      <h3>Phân tích và chẩn đoán</h3>
+      <p>Trò chơi có thể sử dụng Firebase Analytics và Firebase Crashlytics để hiểu cách tính năng được sử dụng và sửa lỗi. Việc thu thập chỉ được bật sau khi bạn đưa ra lựa chọn đồng ý trong trò chơi. Dữ liệu sự kiện được lọc để không gửi tên hiển thị, email, số điện thoại hoặc vị trí chính xác.</p>
+
+      <h2>3. Mục đích sử dụng</h2>
+      <ul>
+        <li>Vận hành trò chơi và lưu tiến trình trên thiết bị.</li>
+        <li>Hiển thị bảng xếp hạng, xác minh điểm và ngăn gian lận.</li>
+        <li>Cung cấp, đo lường và bảo vệ quảng cáo.</li>
+        <li>Phân tích hiệu năng, tìm lỗi và cải thiện trò chơi khi được phép.</li>
+        <li>Tuân thủ nghĩa vụ pháp lý và xử lý yêu cầu hỗ trợ.</li>
+      </ul>
+
+      <h2>4. Nhà cung cấp dịch vụ</h2>
+      <p>Chúng tôi sử dụng các nhà cung cấp sau để xử lý dữ liệu thay mặt chúng tôi hoặc theo chính sách riêng của họ:</p>
+      <ul>
+        <li><strong>Google AdMob và UMP</strong> — quảng cáo, đo lường, đồng ý và chống gian lận.</li>
+        <li><strong>Google Firebase</strong> — phân tích và báo cáo lỗi khi tính năng được bật.</li>
+        <li><strong>Supabase</strong> — cơ sở dữ liệu và hạ tầng cho bảng xếp hạng.</li>
+        <li><strong>Vercel</strong> — lưu trữ website chính sách này; máy chủ có thể xử lý nhật ký truy cập tiêu chuẩn như địa chỉ IP và user-agent.</li>
+      </ul>
+      <p>Chúng tôi không bán thông tin cá nhân của bạn.</p>
+
+      <h2>5. Lưu giữ và xoá dữ liệu</h2>
+      <p>Dữ liệu tiến trình cục bộ tồn tại cho đến khi bạn xoá dữ liệu ứng dụng hoặc gỡ cài đặt. Dữ liệu bảng xếp hạng được lưu để duy trì thứ hạng và lịch sử chống gian lận cho đến khi bị xoá theo yêu cầu. Bạn có thể xoá dữ liệu bảng xếp hạng trong trò chơi hoặc làm theo hướng dẫn tại <a href="/delete-data.html">trang xoá dữ liệu</a>.</p>
+      <p>Các nhà cung cấp dịch vụ có thể lưu dữ liệu theo thời hạn cần thiết cho vận hành, bảo mật, chống gian lận và nghĩa vụ pháp lý của họ.</p>
+
+      <h2>6. Lựa chọn và quyền của bạn</h2>
+      <ul>
+        <li>Bạn có thể từ chối hoặc thay đổi lựa chọn phân tích trong phần Quyền riêng tư của trò chơi.</li>
+        <li>Bạn có thể thay đổi lựa chọn quảng cáo thông qua màn hình UMP khi tuỳ chọn này được cung cấp.</li>
+        <li>Bạn có thể yêu cầu truy cập hoặc xoá dữ liệu bảng xếp hạng bằng cách gửi email tới <a href="mailto:hi@moonraise.xyz">hi@moonraise.xyz</a>.</li>
+      </ul>
+
+      <h2>7. Trẻ em</h2>
+      <p>Egg Island dành cho người chơi từ 13 tuổi trở lên. Trò chơi sử dụng cổng kiểm tra tuổi và không cố ý cung cấp dịch vụ trực tuyến hoặc thu thập dữ liệu cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn tin rằng trẻ em đã cung cấp dữ liệu cho chúng tôi, hãy liên hệ để dữ liệu được xem xét và xoá.</p>
+
+      <h2>8. Bảo mật và chuyển dữ liệu quốc tế</h2>
+      <p>Chúng tôi áp dụng các biện pháp kỹ thuật hợp lý để bảo vệ dữ liệu. Tuy nhiên, không phương thức truyền hoặc lưu trữ nào an toàn tuyệt đối. Các nhà cung cấp nêu trên có thể xử lý dữ liệu tại quốc gia khác nơi bạn sinh sống, tuân theo cơ chế bảo vệ dữ liệu áp dụng của họ.</p>
+
+      <h2>9. Thay đổi chính sách</h2>
+      <p>Chúng tôi có thể cập nhật chính sách này khi trò chơi hoặc yêu cầu pháp lý thay đổi. Ngày cập nhật mới nhất luôn được hiển thị ở đầu trang.</p>
+
+      <h2>10. Liên hệ</h2>
+      <p>Nhà phát triển: <strong>Tuan Hoang</strong><br>Email hỗ trợ: <a href="mailto:hi@moonraise.xyz">hi@moonraise.xyz</a></p>
+    </article>
+
+    <article class="card lang-panel" data-language="en" lang="en">
+      <p class="eyebrow">Tuan Hoang · Last updated August 10, 2026</p>
+      <h1>Privacy Policy</h1>
+      <p class="lead">This policy applies to the Egg Island (Đảo Trứng) game on Android and iOS.</p>
+
+      <h2>1. Overview</h2>
+      <p>Egg Island does not require registration with an email address or phone number. Most game progress, including currency, pets, quests, and settings, is stored locally on your device. Some online features and advertising services process data as described below.</p>
+
+      <h2>2. Data we process</h2>
+      <h3>On-device data</h3>
+      <p>Game progress, settings, consent choices, and birth year are stored on your device. Birth year is used for age screening and is not sent to the leaderboard server.</p>
+
+      <h3>Leaderboard</h3>
+      <p>If you enable the leaderboard, the game sends a random player identifier, display name, scores, and technical match metrics to Supabase. This data is used to display rankings, validate scores, and limit cheating. Your display name and scores may be visible to other players.</p>
+
+      <h3>Advertising</h3>
+      <p>The game uses Google AdMob to provide interstitial and rewarded ads. Depending on your device, region, and consent choices, Google and its advertising partners may process IP address, device information, advertising identifiers, ad interaction data, and diagnostics to deliver and measure ads, prevent fraud, and comply with law.</p>
+      <p>Where required, the game uses Google User Messaging Platform (UMP) to request and store your advertising choices. You may revisit these choices under <strong>Settings → Privacy → Ad privacy options</strong> when legally required.</p>
+
+      <h3>Analytics and diagnostics</h3>
+      <p>The game may use Firebase Analytics and Firebase Crashlytics to understand feature usage and fix errors. Collection is enabled only after you make a consent choice in the game. Event data is filtered to exclude display names, email addresses, phone numbers, and precise location.</p>
+
+      <h2>3. Why we process data</h2>
+      <ul>
+        <li>Operate the game and keep progress on your device.</li>
+        <li>Display leaderboards, validate scores, and prevent cheating.</li>
+        <li>Deliver, measure, and protect advertising.</li>
+        <li>Analyze performance, diagnose errors, and improve the game when permitted.</li>
+        <li>Meet legal obligations and respond to support requests.</li>
+      </ul>
+
+      <h2>4. Service providers</h2>
+      <ul>
+        <li><strong>Google AdMob and UMP</strong> — advertising, measurement, consent, and fraud prevention.</li>
+        <li><strong>Google Firebase</strong> — analytics and crash reporting when enabled.</li>
+        <li><strong>Supabase</strong> — database and infrastructure for leaderboards.</li>
+        <li><strong>Vercel</strong> — hosting for this policy website; its servers may process standard access logs such as IP address and user-agent.</li>
+      </ul>
+      <p>We do not sell your personal information.</p>
+
+      <h2>5. Retention and deletion</h2>
+      <p>Local progress remains until you clear app data or uninstall the game. Leaderboard data is retained to maintain rankings and anti-fraud history until deleted upon request. You may delete leaderboard data in the game or follow the instructions on our <a href="/delete-data.html">data deletion page</a>. Service providers may retain data as needed for operations, security, fraud prevention, and legal obligations.</p>
+
+      <h2>6. Your choices and rights</h2>
+      <ul>
+        <li>You may decline or change analytics choices in the game's Privacy settings.</li>
+        <li>You may change advertising choices through the UMP form when available.</li>
+        <li>You may request access to or deletion of leaderboard data by emailing <a href="mailto:hi@moonraise.xyz">hi@moonraise.xyz</a>.</li>
+      </ul>
+
+      <h2>7. Children</h2>
+      <p>Egg Island is intended for players aged 13 and older. The game uses an age screen and does not knowingly provide online services to, or collect personal data from, children under 13. Contact us if you believe a child has provided data so we can review and delete it.</p>
+
+      <h2>8. Security and international transfers</h2>
+      <p>We use reasonable technical safeguards, but no transmission or storage method is completely secure. The providers above may process data outside your country under their applicable data protection mechanisms.</p>
+
+      <h2>9. Policy changes</h2>
+      <p>We may update this policy when the game or legal requirements change. The latest revision date will appear at the top of this page.</p>
+
+      <h2>10. Contact</h2>
+      <p>Developer: <strong>Tuan Hoang</strong><br>Support email: <a href="mailto:hi@moonraise.xyz">hi@moonraise.xyz</a></p>
+    </article>
+  </main>
+
+  <footer>© 2026 Tuan Hoang · Egg Island</footer>
+  <script src="/language.js"></script>
+</body>
+</html>
