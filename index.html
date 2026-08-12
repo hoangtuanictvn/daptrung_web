@@ -34,7 +34,7 @@
 
       <h2>2. Dữ liệu được xử lý</h2>
       <h3>Dữ liệu lưu trên thiết bị</h3>
-      <p>Tiến trình chơi, cài đặt, lựa chọn đồng ý và năm sinh được lưu trên thiết bị. Năm sinh dùng để kiểm tra độ tuổi và không được gửi tới máy chủ bảng xếp hạng.</p>
+      <p>Tiến trình chơi, cài đặt và lựa chọn đồng ý được lưu trên thiết bị. Trò chơi không hỏi ngày sinh của bạn. Với những bản cài cũ từng nhập năm sinh, giá trị đó vẫn nằm trên máy và không bao giờ được gửi tới máy chủ nào.</p>
 
       <h3>Bảng xếp hạng</h3>
       <p>Khi bạn bật bảng xếp hạng, trò chơi gửi mã người chơi ngẫu nhiên, tên hiển thị, điểm số và các chỉ số kỹ thuật của ván chơi tới Supabase. Dữ liệu này dùng để hiển thị thứ hạng, xác minh điểm và hạn chế gian lận. Tên hiển thị và điểm có thể được người chơi khác nhìn thấy.</p>
@@ -46,7 +46,9 @@
 
       <h3>Phân tích và chẩn đoán</h3>
       <p>Trò chơi có thể sử dụng Firebase Analytics và Firebase Crashlytics để hiểu cách tính năng được sử dụng và sửa lỗi. Việc thu thập chỉ được bật sau khi bạn đưa ra lựa chọn đồng ý trong trò chơi. Dữ liệu sự kiện được lọc để không gửi tên hiển thị, email, số điện thoại hoặc vị trí chính xác.</p>
-      <p>Sự kiện được ghi nhận gồm: bắt đầu và kết thúc một ván (điểm, thời lượng, số lần ghép, bậc pet cao nhất, lý do kết thúc), lượt dùng kỹ năng, các bước hướng dẫn, tương tác với quảng cáo, và giao dịch bằng tiền trong trò chơi. Đây là dữ liệu về cách bạn chơi, không phải nội dung bạn nhập.</p>
+      <p>Sự kiện được ghi nhận gồm: bắt đầu và kết thúc một ván (điểm, thời lượng, số lần ghép, bậc pet cao nhất, lý do kết thúc, và lượng tiền trong game kiếm được), lượt dùng kỹ năng, các bước hướng dẫn, tương tác với quảng cáo, và giao dịch bằng tiền trong trò chơi. Đây là dữ liệu về cách bạn chơi, không phải nội dung bạn nhập.</p>
+      <p>Trò chơi cũng ghi lại việc bạn chuyển giữa các màn hình — ví dụ từ đảo sang cửa hàng — kèm thời gian ở mỗi màn, để chúng tôi biết chỗ nào khó dùng. Đây là tên màn hình cố định của trò chơi, không phải nội dung bạn xem.</p>
+      <p>Cuối cùng, các mốc nâng cấp thú cưng được ghi lại: lên cấp, tiến hoá, nâng kỹ năng, kèm cả những lần bạn muốn nâng nhưng chưa đủ nguyên liệu. Việc này giúp chúng tôi cân bằng độ khó.</p>
       <p>Ngoài sự kiện, một số thuộc tính hồ sơ được lưu kèm mã người dùng ẩn danh do Firebase sinh ra: pet đang trang bị, bậc tiến hoá của pet, đã hoàn thành hướng dẫn hay chưa, cùng <strong>khoảng</strong> số ván đã chơi và <strong>khoảng</strong> điểm cao nhất. Các số này được quy về nhóm (ví dụ &ldquo;5&ndash;19 ván&rdquo;, &ldquo;1.000&ndash;4.999 điểm&rdquo;) thay vì gửi con số chính xác, để hồ sơ không đủ hẹp nhằm nhận dạng một người cụ thể.</p>
       <p>Nếu bạn rút lại đồng ý, trò chơi ngừng thu thập và yêu cầu Firebase xoá dữ liệu đã thu trên thiết bị.</p>
 
@@ -81,7 +83,7 @@
       </ul>
 
       <h2>7. Trẻ em</h2>
-      <p>Egg Island dành cho người chơi từ 13 tuổi trở lên. Trò chơi sử dụng cổng kiểm tra tuổi và không cố ý cung cấp dịch vụ trực tuyến hoặc thu thập dữ liệu cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn tin rằng trẻ em đã cung cấp dữ liệu cho chúng tôi, hãy liên hệ để dữ liệu được xem xét và xoá.</p>
+      <p>Egg Island dành cho người chơi từ 13 tuổi trở lên và không cố ý thu thập dữ liệu cá nhân từ trẻ em dưới 13 tuổi. Vì trò chơi không hỏi tuổi, quảng cáo được đối xử theo hướng bảo thủ nhất cho mọi người chơi. Nếu bạn tin rằng trẻ em đã cung cấp dữ liệu cho chúng tôi, hãy liên hệ để dữ liệu được xem xét và xoá.</p>
 
       <h2>8. Bảo mật và chuyển dữ liệu quốc tế</h2>
       <p>Chúng tôi áp dụng các biện pháp kỹ thuật hợp lý để bảo vệ dữ liệu. Tuy nhiên, không phương thức truyền hoặc lưu trữ nào an toàn tuyệt đối. Các nhà cung cấp nêu trên có thể xử lý dữ liệu tại quốc gia khác nơi bạn sinh sống, tuân theo cơ chế bảo vệ dữ liệu áp dụng của họ.</p>
@@ -103,7 +105,7 @@
 
       <h2>2. Data we process</h2>
       <h3>On-device data</h3>
-      <p>Game progress, settings, consent choices, and birth year are stored on your device. Birth year is used for age screening and is not sent to the leaderboard server.</p>
+      <p>Game progress, settings and consent choices are stored on your device. The game does not ask for your date of birth. On older installs that once entered a birth year, that value stays on the device and is never sent to any server.</p>
 
       <h3>Leaderboard</h3>
       <p>If you enable the leaderboard, the game sends a random player identifier, display name, scores, and technical match metrics to Supabase. This data is used to display rankings, validate scores, and limit cheating. Your display name and scores may be visible to other players.</p>
@@ -115,7 +117,9 @@
 
       <h3>Analytics and diagnostics</h3>
       <p>The game may use Firebase Analytics and Firebase Crashlytics to understand feature usage and fix errors. Collection is enabled only after you make a consent choice in the game. Event data is filtered to exclude display names, email addresses, phone numbers, and precise location.</p>
-      <p>Recorded events cover: the start and end of a run (score, duration, merge count, highest pet tier, reason the run ended), skill activations, tutorial steps, ad interactions, and in-game currency transactions. This describes how you play, not anything you type.</p>
+      <p>Recorded events cover: the start and end of a run (score, duration, merge count, highest pet tier, reason the run ended, and the in-game currency it yielded), skill activations, tutorial steps, ad interactions, and in-game currency transactions. This describes how you play, not anything you type.</p>
+      <p>The game also records when you move between its screens — from the island to the shop, for example — along with how long each was open, so we can find the parts that are awkward to use. These are the game's own fixed screen names, not anything you viewed.</p>
+      <p>Finally, pet upgrade milestones are recorded: levelling up, evolving, upgrading a skill, including the times you wanted an upgrade and lacked the materials for it. This is what lets us balance the difficulty.</p>
       <p>Alongside events, a few profile attributes are stored against the pseudonymous identifier Firebase generates: the equipped pet, its evolution stage, whether the tutorial is complete, and the <strong>range</strong> of runs played and <strong>range</strong> of high score. Those numbers are grouped into bands (for example &ldquo;5&ndash;19 runs&rdquo;, &ldquo;1,000&ndash;4,999 points&rdquo;) rather than sent exactly, so the profile is never narrow enough to single you out.</p>
       <p>If you withdraw consent, the game stops collecting and asks Firebase to delete the data already gathered on your device.</p>
 
@@ -148,7 +152,7 @@
       </ul>
 
       <h2>7. Children</h2>
-      <p>Egg Island is intended for players aged 13 and older. The game uses an age screen and does not knowingly provide online services to, or collect personal data from, children under 13. Contact us if you believe a child has provided data so we can review and delete it.</p>
+      <p>Egg Island is intended for players aged 13 and older and does not knowingly collect personal data from children under 13. Because the game does not ask for an age, advertising is treated in the most conservative way for every player. If you believe a child has provided us with data, please contact us so it can be reviewed and deleted.</p>
 
       <h2>8. Security and international transfers</h2>
       <p>We use reasonable technical safeguards, but no transmission or storage method is completely secure. The providers above may process data outside your country under their applicable data protection mechanisms.</p>
