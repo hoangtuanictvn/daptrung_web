@@ -25,7 +25,7 @@
 
   <main>
     <article class="card lang-panel" data-language="vi" hidden>
-      <p class="eyebrow">Tuan Hoang · Cập nhật ngày 10/08/2026</p>
+      <p class="eyebrow">Tuan Hoang · Cập nhật ngày 12/08/2026</p>
       <h1>Chính sách bảo mật</h1>
       <p class="lead">Chính sách này áp dụng cho trò chơi Egg Island (Đảo Trứng) trên Android và iOS.</p>
 
@@ -42,9 +42,13 @@
       <h3>Quảng cáo</h3>
       <p>Trò chơi sử dụng Google AdMob để cung cấp quảng cáo xen kẽ và quảng cáo có tặng thưởng. Tuỳ theo thiết bị, khu vực và lựa chọn đồng ý của bạn, Google và các đối tác quảng cáo có thể xử lý địa chỉ IP, thông tin thiết bị, mã nhận dạng quảng cáo, dữ liệu tương tác với quảng cáo và dữ liệu chẩn đoán để phân phối, đo lường, chống gian lận và tuân thủ pháp luật.</p>
       <p>Ở những khu vực áp dụng, trò chơi sử dụng Google User Messaging Platform (UMP) để xin và lưu lựa chọn về quảng cáo. Bạn có thể mở lại lựa chọn này trong <strong>Cài đặt → Quyền riêng tư → Tuỳ chọn quảng cáo</strong> khi pháp luật yêu cầu.</p>
+      <p>Tài khoản AdMob của trò chơi được liên kết với Firebase. Nhờ đó AdMob chia sẻ với Firebase Analytics số liệu về lượt hiển thị quảng cáo và doanh thu ước tính của chúng, để chúng tôi biết những vị trí quảng cáo nào đáng giữ. Đây là số liệu về quảng cáo, không phải hồ sơ cá nhân của bạn.</p>
 
       <h3>Phân tích và chẩn đoán</h3>
       <p>Trò chơi có thể sử dụng Firebase Analytics và Firebase Crashlytics để hiểu cách tính năng được sử dụng và sửa lỗi. Việc thu thập chỉ được bật sau khi bạn đưa ra lựa chọn đồng ý trong trò chơi. Dữ liệu sự kiện được lọc để không gửi tên hiển thị, email, số điện thoại hoặc vị trí chính xác.</p>
+      <p>Sự kiện được ghi nhận gồm: bắt đầu và kết thúc một ván (điểm, thời lượng, số lần ghép, bậc pet cao nhất, lý do kết thúc), lượt dùng kỹ năng, các bước hướng dẫn, tương tác với quảng cáo, và giao dịch bằng tiền trong trò chơi. Đây là dữ liệu về cách bạn chơi, không phải nội dung bạn nhập.</p>
+      <p>Ngoài sự kiện, một số thuộc tính hồ sơ được lưu kèm mã người dùng ẩn danh do Firebase sinh ra: pet đang trang bị, bậc tiến hoá của pet, đã hoàn thành hướng dẫn hay chưa, cùng <strong>khoảng</strong> số ván đã chơi và <strong>khoảng</strong> điểm cao nhất. Các số này được quy về nhóm (ví dụ &ldquo;5&ndash;19 ván&rdquo;, &ldquo;1.000&ndash;4.999 điểm&rdquo;) thay vì gửi con số chính xác, để hồ sơ không đủ hẹp nhằm nhận dạng một người cụ thể.</p>
+      <p>Nếu bạn rút lại đồng ý, trò chơi ngừng thu thập và yêu cầu Firebase xoá dữ liệu đã thu trên thiết bị.</p>
 
       <h2>3. Mục đích sử dụng</h2>
       <ul>
@@ -90,7 +94,7 @@
     </article>
 
     <article class="card lang-panel" data-language="en" lang="en">
-      <p class="eyebrow">Tuan Hoang · Last updated August 10, 2026</p>
+      <p class="eyebrow">Tuan Hoang · Last updated August 12, 2026</p>
       <h1>Privacy Policy</h1>
       <p class="lead">This policy applies to the Egg Island (Đảo Trứng) game on Android and iOS.</p>
 
@@ -107,9 +111,13 @@
       <h3>Advertising</h3>
       <p>The game uses Google AdMob to provide interstitial and rewarded ads. Depending on your device, region, and consent choices, Google and its advertising partners may process IP address, device information, advertising identifiers, ad interaction data, and diagnostics to deliver and measure ads, prevent fraud, and comply with law.</p>
       <p>Where required, the game uses Google User Messaging Platform (UMP) to request and store your advertising choices. You may revisit these choices under <strong>Settings → Privacy → Ad privacy options</strong> when legally required.</p>
+      <p>The game's AdMob account is linked to Firebase. Through that link AdMob shares ad impression counts and their estimated revenue with Firebase Analytics, so we can tell which ad placements are worth keeping. This is data about the ads, not a profile of you.</p>
 
       <h3>Analytics and diagnostics</h3>
       <p>The game may use Firebase Analytics and Firebase Crashlytics to understand feature usage and fix errors. Collection is enabled only after you make a consent choice in the game. Event data is filtered to exclude display names, email addresses, phone numbers, and precise location.</p>
+      <p>Recorded events cover: the start and end of a run (score, duration, merge count, highest pet tier, reason the run ended), skill activations, tutorial steps, ad interactions, and in-game currency transactions. This describes how you play, not anything you type.</p>
+      <p>Alongside events, a few profile attributes are stored against the pseudonymous identifier Firebase generates: the equipped pet, its evolution stage, whether the tutorial is complete, and the <strong>range</strong> of runs played and <strong>range</strong> of high score. Those numbers are grouped into bands (for example &ldquo;5&ndash;19 runs&rdquo;, &ldquo;1,000&ndash;4,999 points&rdquo;) rather than sent exactly, so the profile is never narrow enough to single you out.</p>
+      <p>If you withdraw consent, the game stops collecting and asks Firebase to delete the data already gathered on your device.</p>
 
       <h2>3. Why we process data</h2>
       <ul>
