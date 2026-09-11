@@ -15,7 +15,6 @@ body { margin: 0; background: radial-gradient(circle at top, #fff4cd 0, var(--bg
 a { color: #a94c1d; text-underline-offset: .18em; }
 .site-header { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; padding: 1.25rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand { color: var(--ink); font-weight: 850; font-size: 1.15rem; text-decoration: none; }
-.brand span { color: var(--muted); font-weight: 600; }
 nav { display: flex; flex-wrap: wrap; gap: .35rem; }
 nav a { padding: .45rem .7rem; border-radius: 999px; color: var(--muted); font-weight: 700; text-decoration: none; }
 nav a:hover, nav a[aria-current="page"] { background: #ffe0b9; color: #7b3516; }
