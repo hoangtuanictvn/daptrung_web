@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/privacy-policy", "destination": "/index.html" }
+    { "source": "/privacy-policy", "destination": "/" }
   ],
   "headers": [
     {
